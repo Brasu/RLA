@@ -10,7 +10,7 @@ if (notaParcial >= 4){
     let percentualFrequencia = parseFloat(prompt("Qual seu percentual de frequência? "));
     let notaFinal = (notaParcial + notaAv3)/2;
     if (notaFinal >= 5 && percentualFrequencia >= 75) {
-        console.log("Parabéns pela aprovação,", nomeFormatado+"! Sua nota final foi",notaFinal);
+        console.log("Parabéns pela aprovação,", nomeFormatado+"! Sua nota final foi",notaFinal+"!");
     } else {
         console.log("Reprovado na Nota Final.");
     }
