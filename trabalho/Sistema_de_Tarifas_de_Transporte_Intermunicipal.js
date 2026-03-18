@@ -5,7 +5,7 @@ let categoriaPassageiro = parseInt(prompt("Qual a categoria do passageiro? "));
 console.log("Destino (1 - Destino A: R$ 45,00 / 2 - Destino B: R$ 72,00 / 3 - Destino C: R$ 110,00 / 4 - Destino D: R$ 138,00)");
 let destinoValor = parseInt(prompt("Qual o destino do passageiro? "));
 let quantidadePassageiros = prompt("Qual a quantidade de passageiros? ");
-let preçoSubtotal = destinoValor * quantidadePassageiros;
+let preçoSubtotal =   +destinoValor * quantidadePassageiros;
 
 switch(categoriaPassageiro){
   case 1:
