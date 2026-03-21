@@ -45,14 +45,14 @@ switch(true){
     break;
   case operaçao === 1 && valorOperaçao <= contaSaqueMax:
     saldoFinal = saldoAtual - valorOperaçao;
-    console.log(saldoFinal);
+    console.log("Saldo atual:", saldoFinal);
     console.log("Saque realizado com sucesso.");
     mensagem = saldoFinal > 0 ? "Saldo positivo." : "Saldo zerado/negativo.";
     console.log(mensagem);
     break;
   case operaçao === 2:
     saldoFinal = saldoAtual + valorOperaçao
-    console.log(saldoFinal);
+    console.log("Saldo atual:", saldoFinal);
     console.log("Depósito realizado com sucesso.");
     mensagem = saldoFinal > 0 ? "Saldo positivo." : "Saldo zerado/negativo.";
     console.log(mensagem);
