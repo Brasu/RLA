@@ -4,7 +4,9 @@ let categoriaPassageiro = parseInt(prompt("Qual a categoria do passageiro? "));
 console.log("Opções Destino: \n1 - Destino A \n2 - Destino B \n3 - Destino C \n4 - Destino D");
 let destino = parseInt(prompt("Qual o destino do passageiro? "));
 let quantidadePassageiros = prompt("Qual a quantidade de passageiros? ");
+
 let desconto, destinoValor, mensagemEmbarque;
+
 // definições
 switch(categoriaPassageiro){
   case 1:
