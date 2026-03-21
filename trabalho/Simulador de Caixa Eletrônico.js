@@ -5,8 +5,8 @@ console.log("Operações possíveis: \n1-Saque \n2-Depósito \n3-Consultar Saldo
 let operaçao = parseInt(prompt("Qual a operação desejada? "));
 let saldoAtual = parseFloat(prompt("Qual o saldo atual da conta? "));
 let valorOperaçao = parseFloat(prompt("Qual o valor da operação? "));
-let contaSaqueMax, operaçaoTipo;
-
+let contaSaqueMax, operaçaoTipo, saldoFinal, mensagem;
+console.log("-------");
 switch(tipoConta){
   case 1:
     contaSaqueMax = 3000;
@@ -44,15 +44,19 @@ switch(true){
     console.log("Saque negado --- valor acima do limite diário.");
     break;
   case operaçao === 1 && valorOperaçao <= contaSaqueMax:
-    console.log(saldoAtual - valorOperaçao);
+    saldoFinal = saldoAtual - valorOperaçao;
+    console.log(saldoFinal);
     console.log("Saque realizado com sucesso.");
+    mensagem = saldoFinal > 0 ? "Saldo positivo." : "Saldo zerado/negativo.";
+    console.log(mensagem);
     break;
   case operaçao === 2:
-    console.log(saldoAtual + valorOperaçao);
+    saldoFinal = saldoAtual + valorOperaçao
+    console.log(saldoFinal);
     console.log("Depósito realizado com sucesso.");
+    mensagem = saldoFinal > 0 ? "Saldo positivo." : "Saldo zerado/negativo.";
+    console.log(mensagem);
     break;
   case operaçao === 3:
     console.log(saldoAtual);
 }
-    
-  
