@@ -3,9 +3,9 @@ console.log("Tipos de combustível: \n1-Gasolina \n2-Etanol \n3-Diesel");
 let tipoCombustivel = parseInt(prompt("Qual combustivel é utilizado? "));
 let distanciaPercorrida = parseInt(prompt("Qual a distância percorrida? "));
 let litrosAbastecidos = parseInt(prompt("Quantidade de litros abastecidos? "));
-let consumoMedio;
-
 let consumoReal = distanciaPercorrida / litrosAbastecidos;
+
+let consumoMedio;
 
   switch(tipoCombustivel){
   case 1:
