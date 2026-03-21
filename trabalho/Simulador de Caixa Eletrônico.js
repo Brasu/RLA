@@ -8,6 +8,7 @@ let operaçao = parseInt(prompt("Qual a operação desejada? "));
     saldoAtual = parseFloat(prompt("Qual o saldo atual da conta? "));
 
 console.log("-------");
+
 switch(tipoConta){
   case 1:
     contaSaqueMax = 3000;
@@ -21,6 +22,7 @@ switch(tipoConta){
   default:
     console.log("Tipo de conta inválido.")
 }
+
 switch(operaçao){
   case 1:
     operaçaoTipo = "Saque";
@@ -39,6 +41,7 @@ switch(operaçao){
   default:
     condole.log("Operação inválida.")
 }
+
 switch(true){
   case operaçao === 1 && valorOperaçao > saldoAtual:
     console.log("Saque negado --- saldo insuficiente.");
