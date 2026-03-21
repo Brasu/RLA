@@ -3,11 +3,11 @@ console.log("Tipos de conta: \n1-Conta Corrente \n2-Conta Poupança \n3-Conta Sa
 let tipoConta = parseInt(prompt("Qual o tipo de conta? "));
 console.log("Operações possíveis: \n1-Saque \n2-Depósito \n3-Consultar Saldo");
 let operaçao = parseInt(prompt("Qual a operação desejada? "));
-    saldoAtual = parseFloat(prompt("Qual o saldo atual da conta? "));
-
 let contaSaqueMax, operaçaoTipo, saldoFinal, mensagem, valorOperaçao, saldoAtual;
 
-console.log("-------");
+saldoAtual = parseFloat(prompt("Qual o saldo atual da conta? "));
+
+console.log("------------------------");
 
 switch(tipoConta){
   case 1:
@@ -41,6 +41,9 @@ switch(operaçao){
   default:
     condole.log("Operação inválida.")
 }
+console.log("");
+console.log("-----Conta Báncaria-----");
+console.log("Nome:", nomeCorrentista);
 
 switch(true){
   case operaçao === 1 && valorOperaçao > saldoAtual:
