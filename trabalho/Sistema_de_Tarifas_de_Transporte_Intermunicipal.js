@@ -7,7 +7,6 @@ let quantidadePassageiros = prompt("Qual a quantidade de passageiros? ");
 
 let desconto, destinoValor, mensagemEmbarque;
 
-// definições
 switch(categoriaPassageiro){
   case 1:
 desconto = 0
@@ -28,6 +27,7 @@ desconto = 100
   default:
     console.log("Categoria inválida.")
 }
+
 switch(destino){
   case 1:
 destinoValor = 45
@@ -48,7 +48,7 @@ Destino = "Destino D"
   default:
     console.log("Destino inválido.")
 }
-// contas
+
 let preçoSubtotal = destinoValor * quantidadePassageiros;
 let valorDesconto = preçoSubtotal * (desconto / 100);
 let preçoTotal = preçoSubtotal - valorDesconto;
