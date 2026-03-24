@@ -35,4 +35,5 @@ switch(true){
     }
 
 status = consumoReal >= (consumoMedio * 1.1) || consumoReal >= (consumoMedio * 0.9) ? "Liberado para frota." : "Encaminhado para revisão.";
+
 console.log("Motorista:", nomeMotorista, "\nConsumo do combustível:", consumoReal, "\nStatus do veículo:", status);
