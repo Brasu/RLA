@@ -1,9 +1,6 @@
 let nomePassageiro = prompt("Qual o nome do passageiro? ");
 console.log("Categoria do passageiro: \n1 - Adulto \n2 - Estudante \n3 - Idoso \n4 - Criança menor de 5 anos");
 let categoriaPassageiro = parseInt(prompt("Qual a categoria do passageiro? "));
-console.log("Opções Destino: \n1 - Destino A \n2 - Destino B \n3 - Destino C \n4 - Destino D");
-let destino = parseInt(prompt("Qual o destino do passageiro? "));
-let quantidadePassageiros = prompt("Qual a quantidade de passageiros? ");
 
 let desconto, destinoValor, mensagemEmbarque;
 
@@ -28,6 +25,11 @@ desconto = 100
     console.log("Categoria inválida.")
 }
 
+if (categoriaPassageiro == 1 || categoriaPassageiro == 2 || categoriaPassageiro == 3 || categoriaPassageiro == 4){
+    
+console.log("Opções Destino: \n1 - Destino A \n2 - Destino B \n3 - Destino C \n4 - Destino D");
+let destino = parseInt(prompt("Qual o destino do passageiro? "));
+
 switch(destino){
   case 1:
 destinoValor = 45
@@ -49,6 +51,10 @@ Destino = "Destino D"
     console.log("Destino inválido.")
 }
 
+if (destino == 1 || destino == 2 || destino == 3 || destino == 4){
+    
+let quantidadePassageiros = prompt("Qual a quantidade de passageiros? ");
+    
 let preçoSubtotal = destinoValor * quantidadePassageiros;
 let valorDesconto = preçoSubtotal * (desconto / 100);
 let preçoTotal = preçoSubtotal - valorDesconto;
@@ -71,3 +77,5 @@ let preçoTotal = preçoSubtotal - valorDesconto;
 console.log("-----COMPROVANTE-----");
 console.log("Passageiro:", nomePassageiro,"\nQuantidade de passagens:", quantidadePassageiros, "\nDestino:", Destino,"\nEmbarque:", mensagemEmbarque, "\nTipo de desconto:", tipoDesconto, "\nValor total R$:", preçoSubtotal,"\nDesconto:",valorDesconto, "\nValor a pagar R$:",preçoTotal);
 preçoTotal < 100 ? console.log("Pagamento à vista.") : console.log("Parcelável em até 3X sem juros.");
+}
+}
