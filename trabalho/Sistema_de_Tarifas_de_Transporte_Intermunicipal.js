@@ -73,7 +73,7 @@ if (categoriaPassageiro == 1 || categoriaPassageiro == 2 || categoriaPassageiro 
       }
       
       console.log("-----COMPROVANTE-----");
-      console.log("Passageiro:", nomePassageiro,"\nQuantidade de passagens:", quantidadePassageiros, "\nDestino:", destinoNome,"\nEmbarque:", mensagemEmbarque, "\nTipo de desconto:", tipoDesconto, "\nValor total R$:", preçoSubtotal,"\nDesconto:",valorDesconto, "\nValor a pagar R$:",preçoTotal);
+      console.log("Passageiro:", nomePassageiro,"\nQuantidade de passagens:", quantidadePassageiros, "\nDestino:", destinoNome,"\nEmbarque:", mensagemEmbarque, "\nTipo de desconto:", tipoDesconto, "\nValor total R$:", preçoSubtotal.toFixed(2),"\nDesconto:",valorDesconto.toFixed(2), "\nValor a pagar R$:",preçoTotal.toFixed(2));
       preçoTotal < 100 ? console.log("Pagamento à vista.") : console.log("Parcelável em até 3X sem juros.");
     }
 }
