@@ -5,7 +5,7 @@ let distanciaPercorrida = parseInt(prompt("Qual a distância percorrida? "));
 let litrosAbastecidos = parseInt(prompt("Quantidade de litros abastecidos? "));
 let consumoReal = distanciaPercorrida / litrosAbastecidos;
 
-let consumoMedio;
+let consumoMedio, mensagem, status;
 
   switch(tipoCombustivel){
   case 1:
@@ -22,16 +22,17 @@ let consumoMedio;
 }
 switch(true){
    case consumoReal >= (consumoMedio * 1.1):
-        console.log("Excelente --- acima do esperado");
+        mensagem = "Excelente --- acima do esperado";
         break;
    case consumoReal >= (consumoMedio * 0.9):
-        console.log("Regular --- dentro do esperado");
+        mensagem = "Regular --- dentro do esperado";
     break;
    case consumoReal >= (consumoMedio * 0.7):
-        console.log("Ruim --- abaixo do esperado");
+        mensagem = "Ruim --- abaixo do esperado");
         break;
    case consumoReal < (consumoMedio * 0.7):
-        console.log("Crítico --- veículo requer manuntenção");
+        mensagem = "Crítico --- veículo requer manuntenção";
     }
 
-consumoReal >= (consumoMedio * 1.1) || consumoReal >= (consumoMedio * 0.9) ? console.log("Liberado para frota.") : console.log("Encaminhado para revisão.")
+status = consumoReal >= (consumoMedio * 1.1) || consumoReal >= (consumoMedio * 0.9) ? "Liberado para frota." : "Encaminhado para revisão.";
+console.log("Motorista:", nomeMotorista, "\nConsumo do combustível:", consumoReal, "\nStatus do veículo:", status);
