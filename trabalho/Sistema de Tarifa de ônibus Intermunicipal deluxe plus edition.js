@@ -51,8 +51,7 @@ if (categoriaPassageiro == 1 || categoriaPassageiro == 2 || categoriaPassageiro 
     }
 
     if (destino == 1 || destino == 2 || destino == 3 || destino == 4) {
-      let quantidadePassageiros = prompt("Qual a quantidade de passagens? ");
-          
+     
       let preçoSubtotal = destinoValor * quantidadePassageiros;
       let valorDesconto = preçoSubtotal * (desconto / 100);
       let preçoTotal = preçoSubtotal - valorDesconto;
