@@ -4,16 +4,19 @@ let maiorPreço = 0;
 
 let preçoProduto;
 
-while(preçoProduto !== -1){
-  
+while(true){
+ 
+ preçoProduto = parseFloat(prompt("Preço do produto: "));
+ if(preçoProduto === -1){
+     break;
+ }
     quantidadeProdutos++;
-    preçoProduto = parseFloat(prompt("Preço do produto: "));
     preçoFinal = preçoProduto + preçoFinal;
-  
+
  if(preçoProduto > maiorPreço){
      maiorPreço = preçoProduto
  }
-    
+
 }
  console.log()
  console.log("Produtos:", quantidadeProdutos);
