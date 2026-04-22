@@ -1,9 +1,9 @@
 let número = parseInt(prompt("Digite um número: "));
 let tabuada = 0;
-let i = 1
+let multiplicador = 0
 
 while(tabuada < número * 10){
-    
-    tabuada = número * (i++)
-    console.log(tabuada)
+    multiplicador++;
+    tabuada = número * multiplicador;
+    console.log(número, " x ", multiplicador, " = ", tabuada);
 }
