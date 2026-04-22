@@ -20,5 +20,5 @@ while(true){
 }
  console.log()
  console.log("Produtos:", quantidadeProdutos);
- console.log("Total:" , preçoFinal);
- console.log("Produto mais caro:", maiorPreço);
+ console.log("Total:" , preçoFinal.toFixed(2);
+ console.log("Produto mais caro:", maiorPreço.toFixed(2);
