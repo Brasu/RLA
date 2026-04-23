@@ -1,30 +1,44 @@
+let saldoInicial = 1000;
+let operaçao, valorOperaçao;
+let quantidadeOperaçoes = 0;
 
-let saldoIncial = 1000;
-let operaçao;
-let resultado = 0;
-while(operaçao !== 0){
+while(true){
     
 console.log("=== MENU === \n1-Depositar \n2-Sacar \n3-Consultar saldo \n0-Sair");
 operaçao = parseInt(prompt("Qual operação deseja fazer? "));
+console.log()
+
+if(operaçao === 0){
+    break;
+}
 
 switch(operaçao){
   case 1:
-    operaçaoTipo = "Saque";
-    if(resultado > 0 ){
-    console.log("saque realizado:",valorOperaçao - saldoInicial);}
-    valorOperaçao = parseFloat(prompt("Qual o valor da operação? "));
+        
+    console.log("Operação Selecionada: 1-Depositar");
+    valorOperaçao = parseFloat(prompt("Valor do depósito: "));
+    saldoInicial = saldoInicial + valorOperaçao;
+    console.log("Depósito realizado. Saldo:", saldoInicial.toFixed(2));
+    console.log()
     break;
   case 2:
-    operaçaoTipo = "Depósito";
-    console.log("Operação Selecionada:", operaçaoTipo)
-    valorOperaçao = parseFloat(prompt("Qual o valor da operação? "));
+        
+    console.log("Operação Selecionada: 2-Sacar")
+    valorOperaçao = parseFloat(prompt("Valor do saque: "));
+    saldoInicial = saldoInicial - valorOperaçao;
+    saldoInicial >= 0 ? console.log("Saque realizado. Saldo:", saldoInicial.toFixed(2)) : console.log("Saldo insuficiente!");
+    console.log()
     break;
   case 3:
-    operaçaoTipo = "Consultar saldo";
-    console.log("Operação Selecionada:", operaçaoTipo);
+        
+    console.log("Operação Selecionada: 3-Consultar saldo");
+    console.log("Saldo atual:", saldoInicial.toFixed(2));
+    console.log()
     break;
-  default:
-    condole.log("Operação inválida.")
 }
-
+quantidadeOperaçoes++;
 }
+console.log();
+console.log("0-Sair");
+console.log("Saldo final:", saldoInicial.toFixed(2));
+console.log("Operações realizadas:", quantidadeOperaçoes);
