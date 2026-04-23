@@ -15,7 +15,7 @@ if(operaçao === 0){
 switch(operaçao){
   case 1:
         
-    console.log("Operação Selecionada: 1-Depositar");
+    console.log("Operação Selecionada: Depositar");
     valorOperaçao = parseFloat(prompt("Valor do depósito: "));
     saldoInicial = saldoInicial + valorOperaçao;
     console.log("Depósito realizado. Saldo:", saldoInicial.toFixed(2));
@@ -24,7 +24,7 @@ switch(operaçao){
     
   case 2:
         
-    console.log("Operação Selecionada: 2-Sacar")
+    console.log("Operação Selecionada: Sacar")
     valorOperaçao = parseFloat(prompt("Valor do saque: "));
     if(valorOperaçao > saldoInicial){
         console.log("Saldo insuficiente!");
@@ -37,7 +37,7 @@ switch(operaçao){
     
   case 3:
         
-    console.log("Operação Selecionada: 3-Consultar saldo");
+    console.log("Operação Selecionada: Consultar saldo");
     console.log("Saldo atual:", saldoInicial.toFixed(2));
     console.log();
     break;
@@ -45,6 +45,6 @@ switch(operaçao){
 quantidadeOperaçoes++;
 }
 console.log();
-console.log("Operação realizada: 0-Sair");
+console.log("Operação realizada: Sair");
 console.log("Saldo final:", saldoInicial.toFixed(2));
 console.log("Operações realizadas:", quantidadeOperaçoes);
