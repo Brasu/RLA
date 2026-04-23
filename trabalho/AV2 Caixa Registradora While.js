@@ -14,11 +14,11 @@ while(true){
     preçoFinal = preçoProduto + preçoFinal;
 
  if(preçoProduto > maiorPreço){
-     maiorPreço = preçoProduto
+     maiorPreço = preçoProduto;
  }
 
 }
  console.log()
  console.log("Produtos:", quantidadeProdutos);
- console.log("Total:" , preçoFinal.toFixed(2);
- console.log("Produto mais caro:", maiorPreço.toFixed(2);
+ console.log("Total: R$" , preçoFinal.toFixed(2));
+ console.log("Produto mais caro: R$", maiorPreço.toFixed(2));
