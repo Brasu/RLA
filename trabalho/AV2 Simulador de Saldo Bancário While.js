@@ -19,26 +19,32 @@ switch(operaçao){
     valorOperaçao = parseFloat(prompt("Valor do depósito: "));
     saldoInicial = saldoInicial + valorOperaçao;
     console.log("Depósito realizado. Saldo:", saldoInicial.toFixed(2));
-    console.log()
+    console.log();
     break;
+    
   case 2:
         
     console.log("Operação Selecionada: 2-Sacar")
     valorOperaçao = parseFloat(prompt("Valor do saque: "));
+    if(valorOperaçao > saldoInicial){
+        console.log("Saldo insuficiente!");
+    } else {
     saldoInicial = saldoInicial - valorOperaçao;
-    saldoInicial >= 0 ? console.log("Saque realizado. Saldo:", saldoInicial.toFixed(2)) : console.log("Saldo insuficiente!");
-    console.log()
+    console.log("Saque realizado. Saldo:", saldoInicial.toFixed(2));
+}
+    console.log();
     break;
+    
   case 3:
         
     console.log("Operação Selecionada: 3-Consultar saldo");
     console.log("Saldo atual:", saldoInicial.toFixed(2));
-    console.log()
+    console.log();
     break;
 }
 quantidadeOperaçoes++;
 }
 console.log();
-console.log("0-Sair");
+console.log("Operação realizada: 0-Sair");
 console.log("Saldo final:", saldoInicial.toFixed(2));
 console.log("Operações realizadas:", quantidadeOperaçoes);
