@@ -1,18 +1,29 @@
-let precoProduto = [];
-let precoFinal = 0;
-let preco;
+const precoProdutos = [];
+let precoProduto;
 
-while(preco !== 0){
-preco = parseFloat(prompt("Preço produto: "));
-  precoProduto.push(preco)
-}
-function somaProdutos(precoFinal, precoProduto){
- for(let i = 0; i < precoProduto.length; i++){
-   precoFinal += precoProduto[i];
+function somarProdutos(precos, valorAdicional){
+ let soma = 0;
+ for(let indiceAtual = 0; indiceAtual < precos.length; indiceAtual++){
+   soma += precos[indiceAtual];
  }
+ return soma;
 }
-if(precoFinal > 100){
-  precoFinal = precoFinal - (precoFinal * 0.1);
-  console.log(precoFinal)
+
+function calcularValorDesconto (valorTotal){
+if(valorTotal < 100){
+    return 0;
+ }
+ return valorTotal * 0.1;
 }
-console.log(precoFinal)
+
+while(precoProduto !== 0){
+precoProduto = parseFloat(prompt("Preço produto: "));
+  precoProdutos.push(precoProduto)
+}
+
+const valorTotalCompra = somarProdutos(precoProdutos);
+console.log("Valor total da compra: R$", valorTotalCompra);
+
+const valorDesconto = calcularValorDesconto(valorTotalCompra);
+console.log("Valor de desconto: R$", valorDesconto);
+console.log("Valor a pagar: R$", valorTotalCompra - valorDesconto);
