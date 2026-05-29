@@ -11,7 +11,9 @@ let matriz = [[1, 2, 3, 4, 5],
 for(let coluna = 0; coluna < matriz.length; coluna++){
  
   for(let linha = 0; linha < matriz.length; linha++){
-    soma += matriz[coluna][linha]
+    soma += matriz[coluna][linha];
                 }
 }
-console.log(soma)
+console.log(soma);
+
+// Resultado esperado é 325
