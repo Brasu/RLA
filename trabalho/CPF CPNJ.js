@@ -8,14 +8,14 @@ function gerarCPF() {
     return cpf;
 }
 
-const nomePessoa = prompt("Nome Completo:");
-const nomePai = prompt("Nome Completo do Pai:");
-const nomeMae = prompt("Nome Completo da Mãe:");
+const nomePessoa = prompt("Nome Completo: ");
+const nomePai = prompt("Nome Completo do Pai: ");
+const nomeMae = prompt("Nome Completo da Mãe: ");
 
 let documento = "";
 let estado = "";
 
-let tipo = prompt("CPF ou CNPJ?").toLowerCase();
+let tipo = prompt("CPF ou CNPJ? ").toLowerCase();
 
 switch (tipo) {
 
@@ -23,7 +23,7 @@ switch (tipo) {
 
         documento = gerarCPF();
 
-        let escolherEstado = prompt("Deseja escolher um estado? (sim/não)").toLowerCase();
+        let escolherEstado = prompt("Deseja escolher um estado? (sim/não) ").toLowerCase();
 
         if (escolherEstado === "sim") {
 
