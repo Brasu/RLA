@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+    <title> Gerador de CPF e CNPJ </title>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body class = "home">
+<div id = "tudo">
+    <div class = "topo">
+        <header class = "topo_header">
+            <hgroup>
+                <h1><a href = "menu.html">Gerador de CPF e CNPJ</a></h1>
+            </hgroup>
+        </header>
+    </div> <!-- /.topo -->
+    <div class = "principal">
+        <main class = "container">
+            <a href = "cpf.html">
+                <div class = "card_1">
+                    <img src = "cpf.png" alt = "carta tarot Qifrey Which Hat Atelier">
+                    <h2 class = "titulo_card" >
+                        Gerador de CPF
+                    </h2>
+                </div>
+            </a>
+            <a href = "cnpj.html">
+                <div class = "card_2">
+                    <img src = "cnpj.png" alt = "carta tarot Qifrey Which Hat Atelier">
+                    <h2 class = "titulo_card">
+                        Gerador de CNPJ
+                    </h2>
+                </div>
+            </a>
+        </main>
+    </div>
+    <div class="auxiliar">
+        <nav class="auxiliar_navegacao">
+            <button class="menu-btn">☰ Menu</button>
+            <ul class="menu-lista">
+                <li><a href="cpf.html">gerador cpf</a></li>
+                <li><a href="cnpj.html">gerador cnpj</a></li>
+                <li><a href="https://docs.google.com/document/d/1VeXEAHV_yPD2qvkL7-NGHhJZehvSwYSFEC0fkQ0do2w/edit?tab=t.0#heading=h.30j0zll">relatório final</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class = "rodape">
+        <footer>
+            <small> Gerador de CPF e CNPJ - 2026 &copy </small>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
+</html>
