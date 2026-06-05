@@ -82,4 +82,4 @@ if(formularioCNPJ) {
             'text/html': new Blob([divCNPJ.innerHTML], {type: 'text/html'})
         })])
     })
-} else console.warn("Formulário CNPJ não encontrado");
+} else console.log("Formulário CNPJ não encontrado!");
