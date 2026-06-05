@@ -1,0 +1,163 @@
+body {
+    font: 18px/1.4 "Comic Sans MS", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#tudo {
+    width: 100%;
+    margin: 0 auto;
+    background: #fdefe2;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #304540;
+}
+.topo_header h1 {
+    font-size: 36px;
+    text-align: right;
+    margin: 0 0 2px 0;
+    background: #304540;
+    padding: 5px 20px;
+}
+.topo_header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.auxiliar {
+    width: 18.3333%;
+    float: left;
+    text-align: left;
+    padding-left: 15px;
+}
+.auxiliar_navegacao h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.auxiliar_navegacao {
+    color: #fff;
+}
+.auxiliar_navegacao a {
+    background-color: #304540;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    line-height: 2;
+    padding-left: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.auxiliar_navegacao a:hover {
+    background-color: #455d50;
+}
+
+.principal {
+    width: 80%;
+    float: right;
+    height: calc(100vh - 105px);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    flex-grow: 1;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.card_1, .card_2 {
+    width: 21em;
+    height: 25em;
+    background-color: #f8c9ad;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card_1:hover, .card_2:hover {
+    background-color: #f9d2ba;
+    box-shadow: 5px 5px 5px 5px #455d50;
+    box-shadow-blur: 6px;
+}
+
+.card_1{
+    float: left;
+}
+.card_2{
+    float: right;
+    clear: right;
+}
+img {
+    width: 21em;
+    height: 21em;
+}
+.geradorCpf{
+    align-items: center;
+    flex-grow: 1;
+    text-align: left;
+    width: 800px;
+    height: 825px;
+    border-width: 5px;
+    border-color: #304540;
+    border-style: ridge;
+}
+
+.titulogeradorcpf{
+    text-align: center;
+}
+
+select{
+    align-self: center;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+}
+
+input{
+    font-family: "Comic Sans MS", sans-serif;
+}
+.CaixaCPF{
+    background-color: #f0fbd9;
+    font-size:  14px;
+    text-align: left;
+    position: relative;
+    left: 425px;
+    width: 300px;
+    border-width: 5px;
+    border-color: #32564c #92b2aa #456861;
+    border-style: solid;
+}
+
+.geradorCnpj{
+height: 750px;
+
+
+}
+
+.caixaCNPJ{
+    align-self: flex-end;
+    position: relative;
+    left: 425px;
+    bottom: 640px;
+
+}
+
+.rodape {
+    clear: both;
+    background: #304540;
+    color: #fff;
+    padding: 5px 0 12px;
+    text-align: center;
+}
+
+#CPF {
+    font-family: monospace;
+}
